@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f9f9fb;
+            color: #333;
+        }
+        h1,h2{
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1{
+            font-size: 50px;
+            letter-spacing: 3px;
+        }
+        h2{
+            text-align: center;
+            font-size: 26px;
+        }
+        .header{
+            background: #9b95d4;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .header h1 {
+            color:#fff;
+        }
+        .header::before,
+        .header::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: #f9f9fb;
+        }
+        .header::before{
+            top: 0;
+            border-bottom-left-radius: 100% 80px;
+            border-bottom-right-radius: 100% 80px;
+        }
+        .header::after{
+            bottom: 0;
+            border-top-left-radius: 100% 80px;
+            border-top-right-radius: 100% 80px;
+        }
+        .section{
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .grid{
+            display: grid;grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .card{
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 30px 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            display: inline;
+        }
+        .card:hover{
+            transform: translateY(-5px);
+        }
+        .testimonial{
+            display: block;
+            padding: 200px;
+            margin-top: 50px;
+
+        }
+        .testimonial .card{
+            font-size: 14px;
+            font-style: italic;
+            border-left: 4px solid #9b95d4;
+            text-align: left;
+        }
+        .testimonial strong {
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .contact-info{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            margin-left: 100px;
+            font-size: 16px;
+            padding: 55px;
+        }
+        .contact-info div{
+            background: #9b95d4;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 25px;
+            width: 200px;
+            text-align: center;
+            display: flex;
+        }
+        ul li{
+            display: inline;
+            margin: 10px;
+            padding: 10px;
+        }
+        .span{
+            display: block;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        .any-services{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-left: 300px;
+            padding: 40px 30px;
+            max-width: 1000px;
+            height: 300px;
+        }
+        .any-services div{
+            text-align: center;
+        }
+        .testi{
+              margin: 70px;
+              text-align: center;
+        }
+     
+    
+    </style>
+</head>
+<body>
+    <!--Header-->
+ <header class="header">
+    <ul>
+        <li> <a href="https://vk.com" target="_blank"><img src="image/vk.svg" alt="vk logo"></a></li>
+        <li> <a href="https://facebook.com" target="_blank"><img src="image/facebook.svg" alt="facebook"></a></li>
+        <li> <a href="https://instagram.com" target="_blank"><img src="image/instagram.svg" alt="instagram"></a></li>
+        <li> <a href="https://twitter.com" target="_blank"><img src="image/twitter.svg" alt="twitter"></a></li>
+    </ul>
+    <h1>LOGO</h1>
+    <p>we make the world a better place</p>
+ </header>
+
+ <!--Services-->
+  <section class="section">
+    <h2>SERVICES</h2>
+    <div class="grid">
+        <div class="card"><img src="image/handyman.svg" alt="handyman"><span class="span">Handyman</span></div>
+        <div class="card"><img src="image/plumbers.svg" alt="plumbers"><span class="span">Plumber</span></div>
+        <div class="card"><img src="image/bikerepair.svg" alt="Bike"><span class="span">Bike Repair</span></div>
+        <div class="card"><img src="image/cleaning.svg" alt="cleaning"><span class="span">Cleaning</span></div>
+        <div class="card"><img src="image/movers.svg" alt="moving"><span class="span">Moving</span></div>
+        <div class="card"><img src="image/lawncare.svg" alt="lawncare"><span class="span">Lawncare</span></div>
+        <div class="card"><img src="image/trashhauling.svg" alt="trashhauling"><span class="span">Trash Hauling</span></div>
+        <div class="card"><span class="span">Any</span></div>
+
+        <!--Any Services-->
+        <main class="main">
+            <h2 class="form-text">ANY SERVICES</h2>
+            <div class="any-services">
+                <div class="card"><img src="image/lk.svg" alt="lk logo"><span class="span">Moving</span></div>
+                <div class="card"><img src="image/ubn.svg" alt="ubn"><span class="span">Moving</span></div>
+                <div class="card"><span class="span">Moving</span></div>
+                <div class="card">Moving</div>
+            </div>
+        </main>
+        
+        <!--Testymonials-->
+
+        <section class="testimonial">
+            <h2 class="testi">TESTYMONIALS</h2>
+            <div class="grid">
+                <div class="card">
+                    <strong>Kathryn Murphy</strong>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur vero amet illum quae laboriosam nihil eaque, aut, unde debitis totam odit autem beatae exercitationem temporibus ullam repudiandae rem perspiciatis.
+                    <div class="stars"><img src="image/stars.svg" alt="stars"></div>
+                </div>
+                <div class="card">
+                   <strong>Kathryn Murphy</strong> 
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur vero amet illum quae laboriosam nihil eaque, aut, unde debitis totam odit autem beatae exercitationem temporibus ullam repudiandae rem perspiciatis.
+                     <div class="stars"><img src="image/stars.svg" alt="stars"></div>
+                </div>
+                <div class="card">
+                    <strong>Kathryn Murphy</strong>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur vero amet illum quae laboriosam nihil eaque, aut, unde debitis totam odit autem beatae exercitationem temporibus ullam repudiandae rem perspiciatis. 
+
+                       <div class="stars"><img src="image/stars.svg" alt="stars"></div>
+                </div>
+                  <div class="card">
+                     <strong>Kathryn Murphy</strong> 
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequatur vero amet illum quae laboriosam nihil eaque, aut, unde debitis totam odit autem beatae exercitationem temporibus ullam repudiandae rem perspiciatis. 
+                       <div class="stars"><img src="image/stars.svg" alt="stars"></div>
+                  </div>
+            </div>
+        </section>
+
+        <!--Contact-->
+
+        <section class="section">
+            <h2>CONTACT US</h2>
+            <div class="contact-info">
+                <div><a href="mailto:test@gmail.com"><img src="image/envelope.svg" alt="envelope"><span>test@gmail.com</span></a></div>
+                <div><img src="image/phone.svg" alt="phone">(303)555-0105</div>
+                <div><img src="image/map.svg" alt="map">2715 Ash Dr.SanJose,South Dakota 83475</div>
+            </div>
+        </section>
+
+</body>
+</html>
